@@ -12,7 +12,7 @@ import java.util.List;
  * Date(创建日期)： 2022/6/2
  * Time(创建时间)： 15:06
  * Version(版本): 1.0
- * Description(描述)： 无
+ * Description(描述)： 返回的数据实体类
  */
 
 

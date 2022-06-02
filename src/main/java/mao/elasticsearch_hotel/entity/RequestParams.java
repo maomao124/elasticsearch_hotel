@@ -10,7 +10,7 @@ package mao.elasticsearch_hotel.entity;
  * Date(创建日期)： 2022/6/2
  * Time(创建时间)： 15:07
  * Version(版本): 1.0
- * Description(描述)： 无
+ * Description(描述)： 请求参数实体类
  */
 
 public class RequestParams
