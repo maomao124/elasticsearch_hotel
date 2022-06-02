@@ -69,11 +69,15 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
             request.source().from((page - 1) * size).size(size);
             // 2.3.距离排序
             String location = params.getLocation();
+            //判断距离信息是否为空
             if (StringUtils.isNotBlank(location))
             {
+                //如果距离信息不为空，按距离排序
                 request.source().sort(SortBuilders
                         .geoDistanceSort("location", new GeoPoint(location))
+                        //升序
                         .order(SortOrder.ASC)
+                        //单位为千米
                         .unit(DistanceUnit.KILOMETERS)
                 );
             }
@@ -169,6 +173,12 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
         request.source().query(functionScoreQuery);
     }
 
+    /**
+     * 处理响应信息的方法
+     *
+     * @param response SearchResponse
+     * @return PageResult
+     */
     private PageResult handleResponse(SearchResponse response)
     {
         SearchHits searchHits = response.getHits();
@@ -187,15 +197,17 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
             // 4.6.处理高亮结果
             // 1)获取高亮map
             Map<String, HighlightField> map = hit.getHighlightFields();
+            //判断集合是否为空，避免空指针
             if (map != null && !map.isEmpty())
             {
                 // 2）根据字段名，获取高亮结果
                 HighlightField highlightField = map.get("name");
+                //判断高亮字段是否为空，避免空指针
                 if (highlightField != null)
                 {
                     // 3）获取高亮结果字符串数组中的第1个元素
                     String hName = highlightField.getFragments()[0].toString();
-                    // 4）把高亮结果放到HotelDoc中
+                    // 4）把高亮结果放到HotelDoc中，覆盖原有的数据
                     hotelDoc.setName(hName);
                 }
             }
@@ -203,12 +215,14 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
             Object[] sortValues = hit.getSortValues();
             if (sortValues.length > 0)
             {
+                //设置距离
                 hotelDoc.setDistance(sortValues[0]);
             }
 
             // 4.9.放入集合
             hotels.add(hotelDoc);
         }
+        //返回数据
         return new PageResult(total, hotels);
     }
 }
