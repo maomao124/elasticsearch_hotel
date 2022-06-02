@@ -24,7 +24,7 @@ import static mao.elasticsearch_hotel.constants.HotelConstants.MAPPING_TEMPLATE;
  * Date(创建日期)： 2022/6/2
  * Time(创建时间)： 16:11
  * Version(版本): 1.0
- * Description(描述)： 无
+ * Description(描述)： 文档索引操作的测试
  */
 
 @SpringBootTest
@@ -33,6 +33,11 @@ public class HotelIndexTest
     @Autowired
     private RestHighLevelClient client;
 
+    /**
+     * 创建hotel索引
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testCreateIndex() throws IOException
     {
@@ -44,6 +49,11 @@ public class HotelIndexTest
         client.indices().create(request, RequestOptions.DEFAULT);
     }
 
+    /**
+     * 查询索引是否存在
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testExistsIndex() throws IOException
     {
@@ -55,6 +65,11 @@ public class HotelIndexTest
         System.out.println(isExists ? "存在" : "不存在");
     }
 
+    /**
+     * 删除索引
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testDeleteIndex() throws IOException
     {

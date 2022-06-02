@@ -24,6 +24,7 @@ public class HotelDoc
     private String city;
     private String starName;
     private String business;
+    //地理位置
     private String location;
     private String pic;
     private Object distance;

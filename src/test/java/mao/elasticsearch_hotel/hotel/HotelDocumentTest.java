@@ -30,7 +30,7 @@ import java.util.List;
  * Date(创建日期)： 2022/6/2
  * Time(创建时间)： 16:09
  * Version(版本): 1.0
- * Description(描述)： 无
+ * Description(描述)： 文档操作的测试
  */
 
 @SpringBootTest
@@ -42,6 +42,11 @@ public class HotelDocumentTest
     @Autowired
     private IHotelService hotelService;
 
+    /**
+     * 测试添加一条数据
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testAddDocument() throws IOException
     {
@@ -60,6 +65,11 @@ public class HotelDocumentTest
         client.index(request, RequestOptions.DEFAULT);
     }
 
+    /**
+     * 获取刚才插入的数据
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testGetDocumentById() throws IOException
     {
@@ -73,6 +83,7 @@ public class HotelDocumentTest
         HotelDoc hotelDoc = JSON.parseObject(json, HotelDoc.class);
         System.out.println("hotelDoc = " + hotelDoc);
     }
+
 
     @Test
     void testDeleteDocumentById() throws IOException
