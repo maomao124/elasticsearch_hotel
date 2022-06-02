@@ -1,0 +1,24 @@
+2022-06-02 15:26:22.144  INFO 20532 --- [main] m.e.mapper.HotelMapperTest               : Starting HotelMapperTest using Java 16.0.2 on mao with PID 20532 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 15:26:22.146 DEBUG 20532 --- [main] m.e.mapper.HotelMapperTest               : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 15:26:22.146  INFO 20532 --- [main] m.e.mapper.HotelMapperTest               : The following 1 profile is active: "dev"
+2022-06-02 15:26:23.229  INFO 20532 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 15:26:23.541  INFO 20532 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 15:26:25.069  INFO 20532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 15:26:25.533  INFO 20532 --- [main] m.e.mapper.HotelMapperTest               : Started HotelMapperTest in 3.792 seconds (JVM running for 5.144)
+2022-06-02 15:26:26.533 DEBUG 20532 --- [main] m.e.mapper.HotelMapper.selectList        : ==>  Preparing: SELECT id,name,address,price,score,brand,city,star_name,business,longitude,latitude,pic FROM tb_hotel
+2022-06-02 15:26:26.561 DEBUG 20532 --- [main] m.e.mapper.HotelMapper.selectList        : ==> Parameters: 
+2022-06-02 15:26:26.617 DEBUG 20532 --- [main] m.e.mapper.HotelMapper.selectList        : <==      Total: 201
+2022-06-02 15:26:26.735  INFO 20532 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 15:26:26.742  INFO 20532 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 15:27:42.130  INFO 16668 --- [main] m.e.mapper.HotelMapperTest               : Starting HotelMapperTest using Java 16.0.2 on mao with PID 16668 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 15:27:42.131 DEBUG 16668 --- [main] m.e.mapper.HotelMapperTest               : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 15:27:42.132  INFO 16668 --- [main] m.e.mapper.HotelMapperTest               : The following 1 profile is active: "dev"
+2022-06-02 15:27:43.237  INFO 16668 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 15:27:43.552  INFO 16668 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 15:27:45.025  INFO 16668 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 15:27:45.563  INFO 16668 --- [main] m.e.mapper.HotelMapperTest               : Started HotelMapperTest in 3.881 seconds (JVM running for 5.156)
+2022-06-02 15:27:46.671 DEBUG 16668 --- [main] m.e.mapper.HotelMapper.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM tb_hotel
+2022-06-02 15:27:46.705 DEBUG 16668 --- [main] m.e.mapper.HotelMapper.selectCount       : ==> Parameters: 
+2022-06-02 15:27:46.737 DEBUG 16668 --- [main] m.e.mapper.HotelMapper.selectCount       : <==      Total: 1
+2022-06-02 15:27:46.761  INFO 16668 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 15:27:46.769  INFO 16668 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

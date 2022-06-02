@@ -29,6 +29,9 @@ class HotelMapperTest
     @Autowired
     private HotelMapper hotelMapper;
 
+    /**
+     * Gets all.
+     */
     @Test
     void getAll()
     {
@@ -37,5 +40,15 @@ class HotelMapperTest
         {
             System.out.println(hotel);
         }
+    }
+
+    /**
+     * Count.
+     */
+    @Test
+    void count()
+    {
+        Long count = hotelMapper.selectCount(null);
+        System.out.println(count);
     }
 }
