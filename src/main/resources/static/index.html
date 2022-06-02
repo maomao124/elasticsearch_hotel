@@ -754,21 +754,22 @@ Project name(项目名称)：elasticsearch_hotel
                         this.map.add(marker);
                     }
                 },
-            computed: {
-                remainFilter()
+            computed:
                 {
-                    let keys = Object.keys(this.params.filters);
-                    let obj = {};
-                    Object.keys(this.filterList).forEach(key =>
+                    remainFilter()
                     {
-                        if (!keys.includes(key) && this.filterList[key].length > 1)
+                        let keys = Object.keys(this.params.filters);
+                        let obj = {};
+                        Object.keys(this.filterList).forEach(key =>
                         {
-                            obj[key] = this.filterList[key];
-                        }
-                    })
-                    return obj;
+                            if (!keys.includes(key) && this.filterList[key].length > 1)
+                            {
+                                obj[key] = this.filterList[key];
+                            }
+                        })
+                        return obj;
+                    }
                 }
-            }
         })
 </script>
 </body>

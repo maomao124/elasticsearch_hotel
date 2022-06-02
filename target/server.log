@@ -1,0 +1,16 @@
+2022-06-02 19:09:11.793  INFO 20300 --- [main] m.e.ElasticsearchHotelApplication        : Starting ElasticsearchHotelApplication v0.0.1-SNAPSHOT using Java 16.0.2 on mao with PID 20300 (H:\程序\大三下期\elasticsearch_hotel\target\elasticsearch_hotel-0.0.1-SNAPSHOT.jar started by mao in H:\程序\大三下期\elasticsearch_hotel\target)
+2022-06-02 19:09:11.796 DEBUG 20300 --- [main] m.e.ElasticsearchHotelApplication        : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 19:09:11.797  INFO 20300 --- [main] m.e.ElasticsearchHotelApplication        : The following 1 profile is active: "dev"
+2022-06-02 19:09:13.299  INFO 20300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-06-02 19:09:13.311  INFO 20300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-02 19:09:13.312  INFO 20300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-02 19:09:13.386  INFO 20300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-02 19:09:13.386  INFO 20300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1533 ms
+2022-06-02 19:09:13.498  INFO 20300 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 19:09:13.726  INFO 20300 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 19:09:14.918  INFO 20300 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 19:09:15.171  INFO 20300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-06-02 19:09:15.186  INFO 20300 --- [main] m.e.ElasticsearchHotelApplication        : Started ElasticsearchHotelApplication in 4.165 seconds (JVM running for 4.756)
+2022-06-02 19:09:29.247  INFO 20300 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-02 19:09:29.248  INFO 20300 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-02 19:09:29.251  INFO 20300 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

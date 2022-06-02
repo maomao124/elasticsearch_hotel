@@ -437,10 +437,9 @@ Project name(项目名称)：elasticsearch_hotel
                                 this.total = resp.data.total;
                                 this.totalPage = Math.floor((this.total + 5 - 1) / 5);
                                 //判断页码
-                                if (this.totalPage<this.params.page)
+                                if (this.totalPage < this.params.page)
                                 {
                                     this.params.page = this.totalPage;
-                                    
                                 }
                                 if (location)
                                 {
@@ -755,21 +754,22 @@ Project name(项目名称)：elasticsearch_hotel
                         this.map.add(marker);
                     }
                 },
-            computed: {
-                remainFilter()
+            computed:
                 {
-                    let keys = Object.keys(this.params.filters);
-                    let obj = {};
-                    Object.keys(this.filterList).forEach(key =>
+                    remainFilter()
                     {
-                        if (!keys.includes(key) && this.filterList[key].length > 1)
+                        let keys = Object.keys(this.params.filters);
+                        let obj = {};
+                        Object.keys(this.filterList).forEach(key =>
                         {
-                            obj[key] = this.filterList[key];
-                        }
-                    })
-                    return obj;
+                            if (!keys.includes(key) && this.filterList[key].length > 1)
+                            {
+                                obj[key] = this.filterList[key];
+                            }
+                        })
+                        return obj;
+                    }
                 }
-            }
         })
 </script>
 </body>
