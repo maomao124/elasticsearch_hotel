@@ -1,0 +1,170 @@
+2022-06-02 15:26:22.144  INFO 20532 --- [main] m.e.mapper.HotelMapperTest               : Starting HotelMapperTest using Java 16.0.2 on mao with PID 20532 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 15:26:22.146 DEBUG 20532 --- [main] m.e.mapper.HotelMapperTest               : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 15:26:22.146  INFO 20532 --- [main] m.e.mapper.HotelMapperTest               : The following 1 profile is active: "dev"
+2022-06-02 15:26:23.229  INFO 20532 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 15:26:23.541  INFO 20532 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 15:26:25.069  INFO 20532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 15:26:25.533  INFO 20532 --- [main] m.e.mapper.HotelMapperTest               : Started HotelMapperTest in 3.792 seconds (JVM running for 5.144)
+2022-06-02 15:26:26.533 DEBUG 20532 --- [main] m.e.mapper.HotelMapper.selectList        : ==>  Preparing: SELECT id,name,address,price,score,brand,city,star_name,business,longitude,latitude,pic FROM tb_hotel
+2022-06-02 15:26:26.561 DEBUG 20532 --- [main] m.e.mapper.HotelMapper.selectList        : ==> Parameters: 
+2022-06-02 15:26:26.617 DEBUG 20532 --- [main] m.e.mapper.HotelMapper.selectList        : <==      Total: 201
+2022-06-02 15:26:26.735  INFO 20532 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 15:26:26.742  INFO 20532 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 15:27:42.130  INFO 16668 --- [main] m.e.mapper.HotelMapperTest               : Starting HotelMapperTest using Java 16.0.2 on mao with PID 16668 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 15:27:42.131 DEBUG 16668 --- [main] m.e.mapper.HotelMapperTest               : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 15:27:42.132  INFO 16668 --- [main] m.e.mapper.HotelMapperTest               : The following 1 profile is active: "dev"
+2022-06-02 15:27:43.237  INFO 16668 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 15:27:43.552  INFO 16668 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 15:27:45.025  INFO 16668 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 15:27:45.563  INFO 16668 --- [main] m.e.mapper.HotelMapperTest               : Started HotelMapperTest in 3.881 seconds (JVM running for 5.156)
+2022-06-02 15:27:46.671 DEBUG 16668 --- [main] m.e.mapper.HotelMapper.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM tb_hotel
+2022-06-02 15:27:46.705 DEBUG 16668 --- [main] m.e.mapper.HotelMapper.selectCount       : ==> Parameters: 
+2022-06-02 15:27:46.737 DEBUG 16668 --- [main] m.e.mapper.HotelMapper.selectCount       : <==      Total: 1
+2022-06-02 15:27:46.761  INFO 16668 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 15:27:46.769  INFO 16668 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 15:31:46.311  INFO 18348 --- [main] m.e.service.impl.HotelServiceImplTest    : Starting HotelServiceImplTest using Java 16.0.2 on mao with PID 18348 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 15:31:46.312 DEBUG 18348 --- [main] m.e.service.impl.HotelServiceImplTest    : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 15:31:46.312  INFO 18348 --- [main] m.e.service.impl.HotelServiceImplTest    : The following 1 profile is active: "dev"
+2022-06-02 15:31:47.333  INFO 18348 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 15:31:47.603  INFO 18348 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 15:31:48.943  INFO 18348 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 15:31:49.470  INFO 18348 --- [main] m.e.service.impl.HotelServiceImplTest    : Started HotelServiceImplTest in 3.579 seconds (JVM running for 4.635)
+2022-06-02 15:31:50.500 DEBUG 18348 --- [main] m.e.mapper.HotelMapper.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM tb_hotel
+2022-06-02 15:31:50.534 DEBUG 18348 --- [main] m.e.mapper.HotelMapper.selectCount       : ==> Parameters: 
+2022-06-02 15:31:50.572 DEBUG 18348 --- [main] m.e.mapper.HotelMapper.selectCount       : <==      Total: 1
+2022-06-02 15:31:50.600  INFO 18348 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 15:31:50.607  INFO 18348 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 15:33:59.927  INFO 18136 --- [main] m.e.service.impl.HotelServiceImplTest    : Starting HotelServiceImplTest using Java 16.0.2 on mao with PID 18136 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 15:33:59.928 DEBUG 18136 --- [main] m.e.service.impl.HotelServiceImplTest    : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 15:33:59.929  INFO 18136 --- [main] m.e.service.impl.HotelServiceImplTest    : The following 1 profile is active: "dev"
+2022-06-02 15:34:00.968  INFO 18136 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 15:34:01.210  INFO 18136 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 15:34:02.626  INFO 18136 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 15:34:03.061  INFO 18136 --- [main] m.e.service.impl.HotelServiceImplTest    : Started HotelServiceImplTest in 3.541 seconds (JVM running for 4.587)
+2022-06-02 15:34:04.060 DEBUG 18136 --- [main] m.e.mapper.HotelMapper.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM tb_hotel
+2022-06-02 15:34:04.089 DEBUG 18136 --- [main] m.e.mapper.HotelMapper.selectCount       : ==> Parameters: 
+2022-06-02 15:34:04.121 DEBUG 18136 --- [main] m.e.mapper.HotelMapper.selectCount       : <==      Total: 1
+2022-06-02 15:34:04.147  INFO 18136 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 15:34:04.153  INFO 18136 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 15:38:12.908  INFO 7328 --- [restartedMain] m.e.ElasticsearchHotelApplication        : Starting ElasticsearchHotelApplication using Java 16.0.2 on mao with PID 7328 (H:\程序\大三下期\elasticsearch_hotel\target\classes started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 15:38:12.909 DEBUG 7328 --- [restartedMain] m.e.ElasticsearchHotelApplication        : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 15:38:12.909  INFO 7328 --- [restartedMain] m.e.ElasticsearchHotelApplication        : The following 1 profile is active: "dev"
+2022-06-02 15:38:12.946  INFO 7328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-02 15:38:12.946  INFO 7328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-02 15:38:13.772  INFO 7328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-06-02 15:38:13.780  INFO 7328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-02 15:38:13.781  INFO 7328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-02 15:38:13.859  INFO 7328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-02 15:38:13.859  INFO 7328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 912 ms
+2022-06-02 15:38:13.926  INFO 7328 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 15:38:14.041  INFO 7328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 15:38:14.629  INFO 7328 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 15:38:14.764  INFO 7328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-02 15:38:14.794  INFO 7328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-06-02 15:38:14.805  INFO 7328 --- [restartedMain] m.e.ElasticsearchHotelApplication        : Started ElasticsearchHotelApplication in 2.241 seconds (JVM running for 2.853)
+2022-06-02 15:38:33.218  INFO 7328 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-02 15:38:33.218  INFO 7328 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-02 15:38:33.219  INFO 7328 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-02 15:42:08.133 ERROR 7328 --- [http-nio-8089-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:944) ~[na:na]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-06-02 15:42:23.532 ERROR 7328 --- [http-nio-8089-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:944) ~[na:na]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.15.jar:4.4.15]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.5.jar:4.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-06-02 15:44:39.408 ERROR 7328 --- [http-nio-8089-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is [hotel] ElasticsearchStatusException[Elasticsearch exception [type=index_not_found_exception, reason=no such index [hotel]]]] with root cause
+
+org.elasticsearch.ElasticsearchStatusException: Elasticsearch exception [type=index_not_found_exception, reason=no such index [hotel]]
+	at org.elasticsearch.rest.BytesRestResponse.errorFromXContent(BytesRestResponse.java:178) ~[elasticsearch-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:2484) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.parseResponseException(RestHighLevelClient.java:2461) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2184) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:2137) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:2105) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.search(RestHighLevelClient.java:1367) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at mao.elasticsearch_hotel.service.impl.HotelServiceImpl.search(HotelServiceImpl.java:81) ~[classes/:na]
+	at mao.elasticsearch_hotel.service.impl.HotelServiceImpl$$FastClassBySpringCGLIB$$4341a8c7.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.20.jar:5.3.20]
+	at mao.elasticsearch_hotel.service.impl.HotelServiceImpl$$EnhancerBySpringCGLIB$$787b6140.search(<generated>) ~[classes/:na]
+	at mao.elasticsearch_hotel.controller.HotelController.search(HotelController.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+	Suppressed: org.elasticsearch.client.ResponseException: method [POST], host [http://localhost:9200], URI [/hotel/_search?typed_keys=true&max_concurrent_shard_requests=5&search_type=query_then_fetch&batched_reduce_size=512], status line [HTTP/1.1 404 Not Found]
+{"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [hotel]","resource.type":"index_or_alias","resource.id":"hotel","index_uuid":"_na_","index":"hotel"}],"type":"index_not_found_exception","reason":"no such index [hotel]","resource.type":"index_or_alias","resource.id":"hotel","index_uuid":"_na_","index":"hotel"},"status":404}
+		at org.elasticsearch.client.RestClient.convertResponse(RestClient.java:346) ~[elasticsearch-rest-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestClient.performRequest(RestClient.java:312) ~[elasticsearch-rest-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestClient.performRequest(RestClient.java:287) ~[elasticsearch-rest-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2699) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2171) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+		... 61 common frames omitted
+

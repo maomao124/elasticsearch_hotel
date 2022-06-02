@@ -27,6 +27,7 @@ public class HotelDoc
     private String location;
     private String pic;
     private Object distance;
+    //是否为广告
     private Boolean isAD;
 
     /**
