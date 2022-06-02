@@ -52,6 +52,48 @@ public class HotelDoc
     }
 
     /**
+     * Instantiates a new Hotel doc.
+     *
+     * @param id       the id
+     * @param name     the name
+     * @param address  the address
+     * @param price    the price
+     * @param score    the score
+     * @param brand    the brand
+     * @param city     the city
+     * @param starName the star name
+     * @param business the business
+     * @param location the location
+     * @param pic      the pic
+     * @param distance the distance
+     * @param isAD     the is ad
+     */
+    public HotelDoc(Long id, String name, String address, Integer price, Integer score, String brand, String city, String starName, String business, String location, String pic, Object distance, Boolean isAD)
+    {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.price = price;
+        this.score = score;
+        this.brand = brand;
+        this.city = city;
+        this.starName = starName;
+        this.business = business;
+        this.location = location;
+        this.pic = pic;
+        this.distance = distance;
+        this.isAD = isAD;
+    }
+
+    /**
+     * Instantiates a new Hotel doc.
+     */
+    public HotelDoc()
+    {
+
+    }
+
+    /**
      * Gets id.
      *
      * @return the id

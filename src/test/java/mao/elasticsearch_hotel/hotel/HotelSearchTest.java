@@ -38,6 +38,11 @@ public class HotelSearchTest
     @Autowired
     private RestHighLevelClient client;
 
+    /**
+     * 搜索所有数据
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testMatchAll() throws IOException
     {
@@ -51,6 +56,11 @@ public class HotelSearchTest
         handleResponse(response);
     }
 
+    /**
+     * 测试搜索某些数据
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testMatch() throws IOException
     {
@@ -65,6 +75,11 @@ public class HotelSearchTest
         handleResponse(response);
     }
 
+    /**
+     * 测试boolQuery
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testBool() throws IOException
     {
@@ -90,6 +105,11 @@ public class HotelSearchTest
         handleResponse(response);
     }
 
+    /**
+     * 测试排序和分页
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testSortAndPage() throws IOException
     {
@@ -112,6 +132,11 @@ public class HotelSearchTest
         handleResponse(response);
     }
 
+    /**
+     * 测试高亮
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testHighlight() throws IOException
     {
@@ -128,6 +153,11 @@ public class HotelSearchTest
         handleResponse(response);
     }
 
+    /**
+     * 处理响应结果
+     *
+     * @param response SearchResponse
+     */
     private void handleResponse(SearchResponse response)
     {
         SearchHits searchHits = response.getHits();
@@ -148,10 +178,13 @@ public class HotelSearchTest
             Map<String, HighlightField> map = hit.getHighlightFields();
             // 2）根据字段名，获取高亮结果
             HighlightField highlightField = map.get("name");
-            // 3）获取高亮结果字符串数组中的第1个元素
-            String hName = highlightField.getFragments()[0].toString();
-            // 4）把高亮结果放到HotelDoc中
-            hotelDoc.setName(hName);
+            if (highlightField != null)
+            {
+                // 3）获取高亮结果字符串数组中的第1个元素
+                String hName = highlightField.getFragments()[0].toString();
+                // 4）把高亮结果放到HotelDoc中
+                hotelDoc.setName(hName);
+            }
             // 4.7.打印
             System.out.println(hotelDoc);
         }

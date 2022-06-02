@@ -47,7 +47,8 @@ public class RequestParams
      * @param maxPrice the max price
      * @param location the location
      */
-    public RequestParams(String key, Integer page, Integer size, String sortBy, String brand, String city, String starName, Integer minPrice, Integer maxPrice, String location)
+    public RequestParams(String key, Integer page, Integer size, String sortBy, String brand,
+                         String city, String starName, Integer minPrice, Integer maxPrice, String location)
     {
         this.key = key;
         this.page = page;
