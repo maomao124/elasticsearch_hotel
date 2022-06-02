@@ -85,6 +85,11 @@ public class HotelDocumentTest
     }
 
 
+    /**
+     * 删除刚才插入的数据
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testDeleteDocumentById() throws IOException
     {
@@ -94,6 +99,11 @@ public class HotelDocumentTest
         client.delete(request, RequestOptions.DEFAULT);
     }
 
+    /**
+     * 更新文档数据
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testUpdateById() throws IOException
     {
@@ -107,12 +117,17 @@ public class HotelDocumentTest
         client.update(request, RequestOptions.DEFAULT);
     }
 
+    /**
+     * 从数据库里批量插入所有数据
+     *
+     * @throws IOException IOException
+     */
     @Test
     void testBulkRequest() throws IOException
     {
         // 查询所有的酒店数据
         List<Hotel> list = hotelService.list();
-
+        System.out.println("一共：" + list.size() + "条数据");
         // 1.准备Request
         BulkRequest request = new BulkRequest();
         // 2.准备参数

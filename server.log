@@ -57,3 +57,36 @@
 2022-06-02 16:35:25.973  INFO 14544 --- [main] m.e.hotel.HotelDocumentTest              : Started HotelDocumentTest in 4.081 seconds (JVM running for 5.177)
 2022-06-02 16:35:26.900  INFO 14544 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2022-06-02 16:35:26.903  INFO 14544 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 16:36:12.794  INFO 19828 --- [main] m.e.hotel.HotelDocumentTest              : Starting HotelDocumentTest using Java 16.0.2 on mao with PID 19828 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 16:36:12.795 DEBUG 19828 --- [main] m.e.hotel.HotelDocumentTest              : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 16:36:12.795  INFO 19828 --- [main] m.e.hotel.HotelDocumentTest              : The following 1 profile is active: "dev"
+2022-06-02 16:36:13.866  INFO 19828 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 16:36:14.125  INFO 19828 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 16:36:15.554  INFO 19828 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 16:36:16.091  INFO 19828 --- [main] m.e.hotel.HotelDocumentTest              : Started HotelDocumentTest in 3.748 seconds (JVM running for 4.833)
+2022-06-02 16:36:16.870  INFO 19828 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 16:36:16.872  INFO 19828 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 16:38:11.132  INFO 19584 --- [main] m.e.hotel.HotelDocumentTest              : Starting HotelDocumentTest using Java 16.0.2 on mao with PID 19584 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 16:38:11.133 DEBUG 19584 --- [main] m.e.hotel.HotelDocumentTest              : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 16:38:11.134  INFO 19584 --- [main] m.e.hotel.HotelDocumentTest              : The following 1 profile is active: "dev"
+2022-06-02 16:38:12.186  INFO 19584 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 16:38:12.455  INFO 19584 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 16:38:13.922  INFO 19584 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 16:38:14.397  INFO 19584 --- [main] m.e.hotel.HotelDocumentTest              : Started HotelDocumentTest in 3.681 seconds (JVM running for 4.731)
+2022-06-02 16:38:15.306 DEBUG 19584 --- [main] m.e.mapper.HotelMapper.selectList        : ==>  Preparing: SELECT id,name,address,price,score,brand,city,star_name,business,longitude,latitude,pic FROM tb_hotel
+2022-06-02 16:38:15.340 DEBUG 19584 --- [main] m.e.mapper.HotelMapper.selectList        : ==> Parameters: 
+2022-06-02 16:38:15.398 DEBUG 19584 --- [main] m.e.mapper.HotelMapper.selectList        : <==      Total: 201
+2022-06-02 16:38:15.735  INFO 19584 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 16:38:15.741  INFO 19584 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-02 16:39:43.618  INFO 17256 --- [main] m.e.hotel.HotelDocumentTest              : Starting HotelDocumentTest using Java 16.0.2 on mao with PID 17256 (started by mao in H:\程序\大三下期\elasticsearch_hotel)
+2022-06-02 16:39:43.620 DEBUG 17256 --- [main] m.e.hotel.HotelDocumentTest              : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-02 16:39:43.620  INFO 17256 --- [main] m.e.hotel.HotelDocumentTest              : The following 1 profile is active: "dev"
+2022-06-02 16:39:44.734  INFO 17256 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-02 16:39:45.016  INFO 17256 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-02 16:39:46.524  INFO 17256 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-02 16:39:47.026  INFO 17256 --- [main] m.e.hotel.HotelDocumentTest              : Started HotelDocumentTest in 3.846 seconds (JVM running for 4.896)
+2022-06-02 16:39:48.094 DEBUG 17256 --- [main] m.e.mapper.HotelMapper.selectList        : ==>  Preparing: SELECT id,name,address,price,score,brand,city,star_name,business,longitude,latitude,pic FROM tb_hotel
+2022-06-02 16:39:48.128 DEBUG 17256 --- [main] m.e.mapper.HotelMapper.selectList        : ==> Parameters: 
+2022-06-02 16:39:48.196 DEBUG 17256 --- [main] m.e.mapper.HotelMapper.selectList        : <==      Total: 201
+2022-06-02 16:39:48.526  INFO 17256 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-02 16:39:48.531  INFO 17256 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
