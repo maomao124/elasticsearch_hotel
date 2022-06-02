@@ -88,6 +88,12 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
         }
     }
 
+    /**
+     * 填充查询参数的方法
+     *
+     * @param params  RequestParams
+     * @param request SearchRequest
+     */
     private void buildBasicQuery(RequestParams params, SearchRequest request)
     {
         // 1.准备Boolean查询
@@ -95,6 +101,7 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
 
         // 1.1.关键字搜索，match查询，放到must中
         String key = params.getKey();
+        //判断关键字是否为空
         if (StringUtils.isNotBlank(key))
         {
             // 不为空，根据关键字查询
@@ -108,40 +115,54 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
 
         // 1.2.品牌
         String brand = params.getBrand();
+        //判断品牌信息是否为空
         if (StringUtils.isNotBlank(brand))
         {
+            //品牌信息不为空，过滤掉其它品牌，不参与算分
             boolQuery.filter(QueryBuilders.termQuery("brand", brand));
         }
         // 1.3.城市
         String city = params.getCity();
+        //判断城市是否为空
         if (StringUtils.isNotBlank(city))
         {
+            //不为空，过滤掉其它城市，不参与算分
             boolQuery.filter(QueryBuilders.termQuery("city", city));
         }
         // 1.4.星级
         String starName = params.getStarName();
+        //判断星级信息是否为空
         if (StringUtils.isNotBlank(starName))
         {
+            //不为空，过滤掉其它星级，不参与算分
             boolQuery.filter(QueryBuilders.termQuery("starName", starName));
         }
         // 1.5.价格范围
+        //最小价格
         Integer minPrice = params.getMinPrice();
+        //最大价格
         Integer maxPrice = params.getMaxPrice();
+        //判断是否选择了价格区间
         if (minPrice != null && maxPrice != null)
         {
+            //选择了价格区间
+            //是否有最大值，没有最大值，就是xxx元以上
             maxPrice = maxPrice == 0 ? Integer.MAX_VALUE : maxPrice;
+            //设置价格区间
             boolQuery.filter(QueryBuilders.rangeQuery("price").gte(minPrice).lte(maxPrice));
         }
 
         // 2.算分函数查询
         FunctionScoreQueryBuilder functionScoreQuery = QueryBuilders.functionScoreQuery(
                 boolQuery, // 原始查询，boolQuery
-                new FunctionScoreQueryBuilder.FilterFunctionBuilder[]{ // function数组
-                        new FunctionScoreQueryBuilder.FilterFunctionBuilder(
-                                QueryBuilders.termQuery("isAD", true), // 过滤条件
-                                ScoreFunctionBuilders.weightFactorFunction(10) // 算分函数
-                        )
-                }
+                new FunctionScoreQueryBuilder.FilterFunctionBuilder[]
+                        { // function数组
+                                new FunctionScoreQueryBuilder.FilterFunctionBuilder(
+                                        //判断是否是广告，如果是，分数加10倍
+                                        QueryBuilders.termQuery("isAD", true), // 过滤条件
+                                        ScoreFunctionBuilders.weightFactorFunction(10) // 算分函数
+                                )
+                        }
         );
 
         // 3.设置查询条件
