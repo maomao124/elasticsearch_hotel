@@ -1,5 +1,7 @@
 package mao.elasticsearch_hotel.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
+import mao.elasticsearch_hotel.entity.Hotel;
 import mao.elasticsearch_hotel.entity.PageResult;
 import mao.elasticsearch_hotel.entity.RequestParams;
 
@@ -17,7 +19,13 @@ import mao.elasticsearch_hotel.entity.RequestParams;
  */
 
 
-public interface IHotelService
+public interface IHotelService extends IService<Hotel>
 {
+    /**
+     * 搜索
+     *
+     * @param params 参数
+     * @return PageResult
+     */
     PageResult search(RequestParams params);
 }

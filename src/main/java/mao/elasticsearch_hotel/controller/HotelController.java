@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * Project name(项目名称)：elasticsearch_hotel
  * Package(包名): mao.elasticsearch_hotel.controller
@@ -26,9 +28,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("hotel")
 public class HotelController
 {
-    @Autowired
+    @Resource
     private IHotelService hotelService;
 
+    /**
+     * 获取hotel列表
+     *
+     * @param params 参数
+     * @return PageResult
+     */
     @PostMapping("list")
     public PageResult search(@RequestBody RequestParams params)
     {
