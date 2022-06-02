@@ -436,6 +436,11 @@ Project name(项目名称)：elasticsearch_hotel
                                 this.hotels = resp.data.hotels;
                                 this.total = resp.data.total;
                                 this.totalPage = Math.floor((this.total + 5 - 1) / 5);
+                                //判断页码
+                                if (this.totalPage < this.params.page)
+                                {
+                                    this.params.page = this.totalPage;
+                                }
                                 if (location)
                                 {
                                     this.setMapCenter(location);
